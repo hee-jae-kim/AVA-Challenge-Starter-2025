@@ -1,0 +1,42 @@
+nz: 128
+t_his: 10  
+t_pred: 189  
+lambda_v: 1000
+omega: 1000
+beta: 0.1
+vae_specs:
+  rnn_type: gru
+  x_birnn: false
+  e_birnn: false
+  use_drnn_mlp: true
+vae_lr: 1.e-3
+batch_size: 100
+num_vae_epoch: 500  
+num_vae_epoch_fix: 100
+num_vae_data_sample: 5000
+normalize_data: True 
+nk: 1
+nj: 23
+
+# dlow_batch_size: 100
+# d_scale: 100
+# lambda_jl: 25
+# lambda_recon: 2.0
+# dlow_lr: 1.e-4
+# dlow_specs:
+#   model_name: NFDiag
+#   rnn_type: gru
+#   nh_mlp: [1024, 512]
+#   x_birnn: false
+#   # transformer
+#   n_embd: 128 
+#   n_layer: 8
+#   n_head: 8
+#   embd_pdrop: 0.2
+#   resid_pdrop: 0.2
+#   attn_pdrop: 0.2
+#   block_size: 512 
+# num_dlow_epoch: 500  
+# num_dlow_epoch_fix: 100 
+# num_dlow_data_sample: 1000
+# normalize_data: True #####################
